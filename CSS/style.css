@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 *,
 *::before,
 *::after {
   padding: 0;
   margin: 0;
   font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
 }
 
 .nav-bar {
@@ -15,6 +19,8 @@
     margin: auto;
     width: 75%;
     height: 100%;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 
 .nav-bar ul {
@@ -28,11 +34,112 @@
     text-decoration: none;
 }
 
+.hero {
+    background-color: #1F2937;
+}
+
 .hero .nav-bar {
     justify-content: space-between;
 }
 
-.hero {
-    background-color: #1F2937;
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #E5E7EB;
+    padding-bottom: 10px;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    background-color: #3882F6;
+    color: white;
+    padding: 8px 8px;
+    width: 120px;
+}
+
+.image-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+
+.image-section h1 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+
+.image-section img {
+    border: 2px solid #3882F6;
+    border-radius: 10px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+.images div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.images div span {
+    width: 150px;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.quote-section {
+    background-color: #E5E7EB;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.quote-section div {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+}
+
+.author {
+    align-self: flex-end;
+    font-weight: bold;
+    font-family: "Playwrite HR Lijeva", cursive, sans-serif;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-weight: 300;
 }
 
