@@ -14,6 +14,14 @@ body {
     min-height: 100vh;
 }
 
+img {
+    transition: transform .5s;
+}
+  
+img:hover {
+    transform: scale(1.2);
+}
+
 button {
     border: none;
     border-radius: 8px;
@@ -21,12 +29,19 @@ button {
     color: white;
     padding: 8px 8px;
     width: 120px;
+    transition: transform .5s;
 }
 
 button:hover {
     cursor: pointer;
+    transform: scale(1.2);
+    font-weight: bold;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
 
 /* Navigation bar */
 .nav-bar {
@@ -46,9 +61,10 @@ button:hover {
     gap: 36px;
 }
 
-.nav-bar a {
-    color: white;
-    text-decoration: none;
+.nav-bar a:hover {
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 /* Hero section */
@@ -97,10 +113,15 @@ button:hover {
 
 .image-section h1 {
     padding-top: 40px;
-    padding-bottom: 40px;
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
+}
+
+.image-section p {
+    font-style: italic;
+    font-size: 14px;
+    padding-bottom: 40px;
 }
 
 .image-section img {
@@ -110,8 +131,9 @@ button:hover {
 
 .images {
     display: flex;
+    flex: 1;
     justify-content: center;
-    gap: 48px;
+    gap: 100px;
     flex-wrap: wrap;
 }
 
@@ -130,8 +152,8 @@ button:hover {
 /* Quote section */
 .quote-section {
     background-color: #E5E7EB;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .quote-section div {
@@ -162,7 +184,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-content: center;
+    align-items: center;
     border-radius: 5px;
     width: 60%;
     margin: auto;
@@ -189,6 +211,12 @@ button:hover {
     align-content: center;
     background-color: #1F2937;
     color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 300;
+    gap: 15px;
+}
+
+.footer a:hover {
+    transform: scale(1.5);
 }
