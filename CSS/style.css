@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Global classes */
 *,
 *::before,
 *::after {
@@ -12,6 +14,21 @@ body {
     min-height: 100vh;
 }
 
+button {
+    border: none;
+    border-radius: 8px;
+    background-color: #3882F6;
+    color: white;
+    padding: 8px 8px;
+    width: 120px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+/* Navigation bar */
 .nav-bar {
     display: flex;
     align-items: center;
@@ -34,6 +51,7 @@ body {
     text-decoration: none;
 }
 
+/* Hero section */
 .hero {
     background-color: #1F2937;
 }
@@ -46,6 +64,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
     width: 75%;
     margin: auto;
     padding-bottom: 60px;
@@ -67,15 +87,7 @@ body {
     padding-bottom: 10px;
 }
 
-button {
-    border: none;
-    border-radius: 10px;
-    background-color: #3882F6;
-    color: white;
-    padding: 8px 8px;
-    width: 120px;
-}
-
+/* Images section */
 .image-section {
     text-align: center;
     display: flex;
@@ -115,6 +127,7 @@ button {
     overflow-wrap: break-word;
 }
 
+/* Quote section */
 .quote-section {
     background-color: #E5E7EB;
     padding-top: 40px;
@@ -143,3 +156,39 @@ button {
     font-weight: 300;
 }
 
+/* Sign up section */
+.sign-up-element {
+    background-color: #3882F6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    border-radius: 5px;
+    width: 60%;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding: 40px 40px;
+    gap: 10px;
+}
+
+.sign-up-element h2,
+.sign-up-element p {
+    color: white;
+}
+
+.sign-button {
+    border-radius: 8px;
+    border: 1px solid white;
+}
+
+/* Footer section */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #1F2937;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
