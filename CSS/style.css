@@ -8,6 +8,7 @@
   padding: 0;
   margin: 0;
   font-family: Roboto, Arial, Helvetica, sans-serif;
+  box-sizing: border-box; 
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 }
 
 img {
-    transition: transform .5s;
+    transition: transform 0.3s;
 }
   
 img:hover {
@@ -62,9 +63,7 @@ a {
 }
 
 .nav-bar a:hover {
-    border: 2px solid white;
-    border-radius: 5px;
-    padding: 10px;
+    color: #3882F6;
 }
 
 /* Hero section */
